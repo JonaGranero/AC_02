@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <title>AC_02_Trabalhando com BootStrap</title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <script src="jquery/jquery.min.js"></script>
+      <script src="js/bootstrap.min.js"></script>
+   </head>
+   <body>
+      <nav class="navbar navbar-expand-sm bg-light navbar-light">
+         <a class="navbar-brand" href="#">TargetCaptor</a>
+         <ul class="navbar-nav">
+            <li class="nav-item">
+               <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="QuemSomos.html">Quem Somos</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="Servicos.html">Serviços</a>
+            </li>
+            <li class="nav-item">
+               <a class="nav-link" href="FaleConosco.html">Fale Conosco</a>
+            </li>
+         </ul>
+      </nav>
+      <body>
+         <div class="container">
+            <h2>Quem Somos</h2>
+            <br>
+            <p>A Target Captor foi fundada em 2019, na cidade de São Paulo, por um grupo de 4 integrantes (Jonas Graneiro, Matheus Paick, Alisson Lima e Caio Monteiro) e sua principal missão é viabilizar de uma maneira inteligente e rápida a solução para obter informações. Atualmente contamos com 4 colaboradores e nossos principais clientes são pequenas e médias empresas. </p>
+            <br>
+            <p>A baixo nossa lista de contatos:</p>
+            <br>            
+            <h2>Contatos:</h2>
+            <input class="form-control" id="myInput" type="text" placeholder="Search..">
+            <br>
+            <table class="table table-bordered table-striped">
+               <thead>
+                  <tr>
+                     <th>Nome</th>
+                     <th>Setor</th>
+                     <th>Telefone</th>
+                     <th>Email</th>
+                  </tr>
+               </thead>
+               <tbody id="myTable">
+                  <tr>
+                     <td>Alisson Lima</td>
+                     <td>Diretoria</td>
+                     <td>11933558844</td>
+                     <td>alisson.lima@targetcaptor.com.br</td>
+                  </tr>
+                  <tr>
+                     <td>Jonas Graneiro</td>
+                     <td>Diretoria</td>
+                     <td>11933558855</td>
+                     <td>jonas.graneiro@targetcaptor.com.br</td>
+                  </tr>
+                  <tr>
+                     <td>Matheus Paick</td>
+                     <td>Diretoria</td>
+                     <td>11933558866</td>
+                     <td>matheus.paick@targetcaptor.com.br</td>
+                  </tr>
+                  <tr>
+                     <td>Caio Monteiro</td>
+                     <td>Diretoria</td>
+                     <td>11933558877</td>
+                     <td>caio.monteiro@targetcaptor.com.br</td>
+                  </tr>
+               </tbody>
+            </table>
+            <p>Copyright © 2019</p>
+            <script>
+               $(document).ready(function(){
+                 $("#myInput").on("keyup", function() {
+                   var value = $(this).val().toLowerCase();
+                   $("#myTable tr").filter(function() {
+                     $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+                   });
+                 });
+               });
+            </script>
+   </body>
+</html>
+</tbody>
+</table>
+</div>
+</body>
+</html>
