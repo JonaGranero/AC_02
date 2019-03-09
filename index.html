@@ -7,30 +7,71 @@
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="jquery/jquery.min.js"></script>
   <script src="js/bootstrap.min.js"></script>
+  <style>
+    /* Make the image fully responsive */
+    .carousel-inner img {
+        width: 100%;
+        height: 100%;
+    }
+    </style>  
 </head>
 <body>
-<nav class="navbar navbar-default">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <a class="navbar-brand" href="index.html">TargetCaptor</a>
-    </div>
-    <ul class="nav navbar-nav">
-      <li class="active"><a href="index.html">Home</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-screenshot"></span> Quem Somos</a></li>
-      <li><a href="Servicos.html"><span class="glyphicon glyphicon-list-alt"></span> Serviços</a></li>
-      <li><a href="FaleConosco.html"><span class="glyphicon glyphicon-envelope"></span> Fale Conosco</a></li>
-    </ul>
-    <ul class="nav navbar-nav navbar-right">
-      <li><a href="#"><span class="glyphicon glyphicon-user"></span> Inscreva-se</a></li>
-      <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Entrar</a></li>
-    </ul>
-  </div>
+<nav class="navbar navbar-expand-sm bg-light navbar-light">
+  <a class="navbar-brand" href="#">TargetCaptor</a>
+  <ul class="navbar-nav">
+    <li class="nav-item">
+      <a class="nav-link" href="index.html">Home</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="#">Quem Somos</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="Servicos.html">Serviços</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" href="FaleConosco.html">Fale Conosco</a>
+    </li>
+  </ul>
 </nav>
         
 <div class="container">
   
   <h1>Olá, somos a Target Captor!</h1>
   <p>Seja bem-vindo em nossas ssoluções de automatização.</p>
+</div>
+
+<div class="container">
+  <h2>Carousel Example</h2>  
+  <div id="demo" class="carousel slide" data-ride="carousel">
+
+    <!-- Indicators -->
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    
+    <!-- The slideshow -->
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="img/Robo.png" alt="Los Angeles" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="img/target_02.png" alt="Chicago" width="1100" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="img/target_PNG38.png" alt="New York" width="1100" height="500">
+      </div>
+    </div>
+    
+    <!-- Left and right controls -->
+    <a class="carousel-control-prev" href="#demo" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#demo" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
 </div>
 </body>
 </html>
